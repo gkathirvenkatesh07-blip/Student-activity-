@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Activity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Activity Tracker</h1>
+
+<form id="activity-form">
+    <input type="text" id="activity" placeholder="Activity Name" required>
+
+    <select id="category">
+        <option value="Academic">Academic</option>
+        <option value="Sports">Sports</option>
+        <option value="Personal">Personal</option>
+    </select>
+
+    <input type="number" id="hours" step="0.5" placeholder="Hours" required>
+
+    <button type="submit">Log Activity</button>
+</form>
+
+<h2>Total Hours: <span id="total-hours">0</span></h2>
+
+<div id="activity-list"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
